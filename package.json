@@ -1,0 +1,22 @@
+{
+  "name": "bobcatsss2019",
+  "version": "1.0.0",
+  "description": "Landing page for Bobcatsss 2019 conference in Osijek.",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amihaljevic/bobcatsss2019.git"
+  },
+  "keywords": [
+    "bobcatsss"
+  ],
+  "author": "Andrea Mihaljević",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
