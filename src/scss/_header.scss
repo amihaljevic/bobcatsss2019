@@ -1,0 +1,24 @@
+.logo {
+  display: inline-block;
+  width: 15%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.nav {
+  display: inline-block;
+  width: 70%;
+
+  ul {
+    margin-left: 35%;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 5%;
+    font-family: "josefin-light";
+  }
+}
