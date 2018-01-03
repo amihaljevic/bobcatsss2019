@@ -20,5 +20,14 @@
     display: inline-block;
     margin-right: 5%;
     font-family: "josefin-light";
+    
+    &:last-child {
+      margin-right: 0;
+    }
   }
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
 }
