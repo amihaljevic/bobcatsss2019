@@ -20,6 +20,7 @@
     display: inline-block;
     margin-right: 5%;
     font-family: "josefin-light";
+    text-transform: uppercase;
     
     &:last-child {
       margin-right: 0;
@@ -27,7 +28,22 @@
   }
 }
 
-.hero-image img {
-  width: 100%;
-  height: auto;
+.hero-image {
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-family: "montserrat";
+    color: #4D4B4C;
+    text-align: center;
+    margin-top: -10%;
+  }
+
+  p {
+    text-transform: uppercase;
+    text-align: center;
+  }
 }

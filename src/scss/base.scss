@@ -7,3 +7,45 @@
   font-family: "josefin-light";
   color: #FFF;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 3, 1fr 0.5fr 1fr;
+  grid-gap: 10px;
+}
+
+.about {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  columns: 2;
+}
+
+.participation {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  columns: 2;
+
+  .article--left {
+    grid-column: 1;
+  }
+
+  .article--right {
+    grid-column: 3;
+  }
+
+  figure {
+    width: 30%;
+    height: auto;
+  }
+
+  img {
+    float: left;
+    width: 45%;
+    height: auto;
+  }
+}
+
+.countdown {
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
