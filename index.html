@@ -72,7 +72,19 @@
     </section>
     <section class="countdown">
       <h1>Countdown Until Bobcatsss Osijek, Croatia</h1>
+          <span class="days" id="days"></span>
+          <div class="smalltext">days</div>
+        
+          <span class="hours" id="hours"></span>
+          <div class="smalltext">hours</div>
+       
+          <span class="minutes" id="minutes"></span>
+          <div class="smalltext">minutes</div>
+        
+          <span class="seconds" id="seconds"></span>
+          <div class="smalltext">seconds</div>
     </section>
+
   </main>
   <footer class="footer">
     <section>
@@ -95,5 +107,32 @@
     </section>
   </footer>
   <script src="dist/script.bundle.js"></script>
+
+  <script>
+    // Set the date we're counting down to, PROMJENITI!
+    var countDownDate = new Date("Jan 28, 2019 09:00:00").getTime();
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    calculate();
+        setInterval(function() {
+        calculate();
+    }, 1000);
+
+    function calculate(){
+        now = new Date().getTime();
+        distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;    
+    }
+
+  </script>
 </body>
 </html>
