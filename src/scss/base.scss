@@ -8,22 +8,30 @@
   @include grid-container;
 }
 
-.about {
-  @include grid-column(6);
+.about figure {
+  @include grid-column(1);
 }
 
 .participation {
+  clear: both;
+
+  article {
+    width: 100%;
+  }
+}
+
+.main--left {
+  @include grid-column(5);
+}
+
+.main--right {
+  @include grid-column(5);
+}
+
+/*.participation {
   grid-column: 1 / 4;
   grid-row: 2;
   columns: 2;
-
-  .article--left {
-    grid-column: 1;
-  }
-
-  .article--right {
-    grid-column: 3;
-  }
 
   figure {
     width: 30%;
@@ -35,9 +43,10 @@
     width: 45%;
     height: auto;
   }
-}
+}*/
 
 .countdown {
+  clear: both;
   grid-column: 1 / 4;
   grid-row: 3;
 }
