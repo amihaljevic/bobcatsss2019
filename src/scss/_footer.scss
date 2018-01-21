@@ -1,0 +1,15 @@
+.footer {
+    @include grid-container;
+    @include grid-column(12);
+    background-color: #009688;
+    font-family: "josefin-light";
+    color: #FFF;
+
+    h1 {
+        color: #FFF;
+    }
+  }
+
+  .footer__section {
+    @include grid-column(4);
+  }

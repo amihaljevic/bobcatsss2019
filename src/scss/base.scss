@@ -1,23 +1,15 @@
+@import "_vendor";
 @import "_fonts";
 
 @import "_header";
-
-.footer {
-  background-color: #009688;
-  font-family: "josefin-light";
-  color: #FFF;
-}
+@import "_footer";
 
 .container {
-  display: grid;
-  grid-template-columns: 3, 1fr 0.5fr 1fr;
-  grid-gap: 10px;
+  @include grid-container;
 }
 
 .about {
-  grid-column: 1 / 4;
-  grid-row: 1;
-  columns: 2;
+  @include grid-column(6);
 }
 
 .participation {

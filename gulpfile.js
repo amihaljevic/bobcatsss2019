@@ -9,11 +9,12 @@ var autoprefixer = require("gulp-autoprefixer");
 var browsersync = require("browser-sync").create();
 var watch = require("gulp-watch");
 var sass = require("gulp-sass");
+var neat = require("node-neat");
 
 // SCSS Task
 gulp.task("scss", function() {
   return gulp.src("src/scss/base.scss")
-  .pipe(sass().on("error", sass.logError))
+  .pipe(sass.sync({ includePaths: neat.includePaths }).on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ["last 100 versions"],
     grid: true
