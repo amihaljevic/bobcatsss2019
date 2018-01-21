@@ -2,6 +2,7 @@
     clear: both;
     font-family: "josefin-light";
     color: #8BC248;
+    margin-bottom: 10%;
 
     span {
         font-size: 3rem;
@@ -11,11 +12,23 @@
 .countdown--wrapper {
     width: 100%;
     text-align: center;
+    display: inline-block;
+    margin: 2% 0 5% 0;
+
+    figure {
+        width: 10%;
+        display: inline-block;
+        margin: 0;
+    }
+
+    img {
+        width: 75%;
+    }
 }
 
 .countdown--days, .countdown--hours, .countdown--minutes, .countdown--seconds {
     display: inline-block;
-    width: 15%;
+    width: 21.9%;
     border-right: 1px solid #009988;
 
     &:last-of-type {

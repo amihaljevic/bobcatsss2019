@@ -9,12 +9,26 @@
   @include grid-container;
 }
 
-.about figure {
-  @include grid-column(1);
+.main__container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.about {
+  margin-bottom: 25%;
+
+  figure {
+    @include grid-column(1);
+  }
 }
 
 .participation {
   clear: both;
+  margin-bottom: 45%;
 
   figure {
     @include grid-column(1);
@@ -23,6 +37,10 @@
 
 .participation__article {
   @include grid-column(5);
+
+  h2 {
+    font-size: .7rem;
+  }
 
   &:nth-of-type(3) {
     clear: both;
@@ -51,20 +69,3 @@
 .main--right {
   @include grid-column(5);
 }
-
-/*.participation {
-  grid-column: 1 / 4;
-  grid-row: 2;
-  columns: 2;
-
-  figure {
-    width: 30%;
-    height: auto;
-  }
-
-  img {
-    float: left;
-    width: 45%;
-    height: auto;
-  }
-}*/

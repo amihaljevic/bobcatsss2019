@@ -1,3 +1,8 @@
+.header__container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .logo {
   display: inline-block;
   width: 15%;
@@ -10,10 +15,10 @@
 
 .nav {
   display: inline-block;
-  width: 70%;
+  width: 75%;
 
   ul {
-    margin-left: 35%;
+    margin-left: 15%;
   }
 
   li {
@@ -29,10 +34,12 @@
 }
 
 .hero-image {
+  margin-bottom: 15%;
 
   img {
     width: 100%;
     height: auto;
+    margin-top: -5%;
   }
 
   h1 {
