@@ -2,6 +2,7 @@
 @import "_fonts";
 
 @import "_header";
+@import "_countdown";
 @import "_footer";
 
 .container {
@@ -15,8 +16,31 @@
 .participation {
   clear: both;
 
-  article {
-    width: 100%;
+  figure {
+    @include grid-column(1);
+  }
+}
+
+.participation__article {
+  @include grid-column(5);
+
+  &:nth-of-type(3) {
+    clear: both;
+  }
+
+  figure {
+    width: 30%;
+    height: auto;
+    margin-right: 0;
+
+    img {
+      width: 55%;
+    }
+  }
+
+  section {
+    display: inline-block;
+    width: 55%;
   }
 }
 
@@ -44,9 +68,3 @@
     height: auto;
   }
 }*/
-
-.countdown {
-  clear: both;
-  grid-column: 1 / 4;
-  grid-row: 3;
-}

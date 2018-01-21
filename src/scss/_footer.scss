@@ -4,6 +4,25 @@
     background-color: #009688;
     font-family: "josefin-light";
     color: #FFF;
+    margin: 0;
+    width: 100%;
+
+    address a {
+      text-decoration: none;
+      color: #FFF;
+      font-style: normal;
+    }
+  }
+
+  .partners {
+    ul {
+      padding-left: 0;
+
+      li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   .footer__section {

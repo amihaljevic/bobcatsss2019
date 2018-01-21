@@ -1,0 +1,24 @@
+.countdown {
+    clear: both;
+    font-family: "josefin-light";
+    color: #8BC248;
+
+    span {
+        font-size: 3rem;
+    }
+}
+
+.countdown--wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.countdown--days, .countdown--hours, .countdown--minutes, .countdown--seconds {
+    display: inline-block;
+    width: 15%;
+    border-right: 1px solid #009988;
+
+    &:last-of-type {
+        border-right: none;
+    }
+}
