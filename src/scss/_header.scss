@@ -1,12 +1,20 @@
 .header__container {
   width: 70%;
   margin: 0 auto;
+
+  @media screen and (min-width: 320px) and (max-width: 1347px) {
+    width: 95%;
+  }
 }
 
 .logo {
   display: inline-block;
   margin: 1% 0;
   width: 24%;
+
+  @media screen and (min-width: 320px) and (max-width: 1347px) {
+    width: 45%;
+  }
 
   img {
     width: 100%;
@@ -17,6 +25,10 @@
 .nav {
   display: inline-block;
   width: 75%;
+
+  @media screen and (min-width: 320px) and (max-width: 1347px) {
+    display: none;
+  }
 
   ul {
     margin-left: 3%;
@@ -59,5 +71,20 @@
   p {
     text-transform: uppercase;
     text-align: center;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1347px) {
+    figure {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: .7rem;
+      margin-left: 0;
+    }
+
+    p {
+      font-size: .7rem;
+    }
   }
 }
