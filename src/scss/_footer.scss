@@ -38,5 +38,23 @@
         font-family: "montserrat";
         color: #FFF;
         font-size: 1rem;
+        letter-spacing: .2rem;
     }
   }
+
+  .sponsors {
+    h1 {
+      text-align: center;
+    }
+
+    figure {
+      width: 45%;
+      margin: 0 auto;
+    }
+  }
+
+.facebook-icon::before { content: url(/dist/icon/facebook.png); }
+
+.twitter-icon::before { content: url(/dist/icon/twitter.png); }
+
+.instagram-icon::before { content: url(/dist/icon/instagram.png); }

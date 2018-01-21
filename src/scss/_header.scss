@@ -5,7 +5,8 @@
 
 .logo {
   display: inline-block;
-  width: 15%;
+  margin: 1% 0;
+  width: 24%;
 
   img {
     width: 100%;
@@ -18,7 +19,7 @@
   width: 75%;
 
   ul {
-    margin-left: 15%;
+    margin-left: 3%;
   }
 
   li {
@@ -26,6 +27,12 @@
     margin-right: 5%;
     font-family: "josefin-light";
     text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: #4D4B4C;
+      letter-spacing: .2rem;
+    }
     
     &:last-child {
       margin-right: 0;

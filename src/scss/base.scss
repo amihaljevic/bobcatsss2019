@@ -5,6 +5,10 @@
 @import "_countdown";
 @import "_footer";
 
+body {
+  margin-top: 2.5%;
+}
+
 .container {
   @include grid-container;
 }
@@ -18,32 +22,100 @@ img {
   width: 100%;
 }
 
+p, li {
+  line-height: 1.8rem;
+}
+
+h2 {
+  letter-spacing: .2rem;
+}
+
 .about {
   margin-bottom: 25%;
 
   figure {
     @include grid-column(1);
+    position: relative;
+    top: 2rem;
+    left: 1rem;
   }
 }
 
 .participation {
   clear: both;
-  margin-bottom: 45%;
+  margin-bottom: 60%;
+
+  h1 {
+    margin-bottom: 5%;
+  }
 
   figure {
     @include grid-column(1);
+    position: relative;
+    top: 2rem;
   }
 }
 
 .participation__article {
   @include grid-column(5);
+  margin-left: 0;
 
   h2 {
     font-size: .7rem;
   }
 
+  &:first-of-type {
+    figure {
+      width: 35%;
+      position: relative;
+      top: -2rem;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &:nth-of-type(2) {
+    margin-bottom: 5%;
+
+    figure {
+      width: 35%;
+      position: relative;
+      left: -1rem;
+      top: 0;
+    }
+
+    img {
+      width: 110%;
+    }
+  }
+
   &:nth-of-type(3) {
     clear: both;
+
+    figure {
+      width: 35%;
+      position: relative;
+      top: 1rem;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &:last-of-type {
+    figure {
+      width: 35%;
+      position: relative;
+      left: -1rem;
+      top: 0;
+    }
+
+    img {
+      width: 110%;
+    }
   }
 
   figure {
@@ -64,6 +136,7 @@ img {
 
 .main--left {
   @include grid-column(5);
+  margin-left: 0;
 }
 
 .main--right {
