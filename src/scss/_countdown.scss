@@ -4,9 +4,7 @@
     color: #8BC248;
     margin-bottom: 10%;
 
-    span {
-        font-size: 3rem;
-    }
+    span { font-size: 3rem; }
 
     @media screen and (min-width: 320px) and (max-width: 1347px) {
         figure {
@@ -28,20 +26,14 @@
         margin: 0;
     }
 
-    img {
-        width: 75%;
-    }
+    img { width: 75%; }
 
-    @media screen and (min-width: 320px) and (max-width: 1347px) {
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
         margin: 2% 0 5%;
 
-        span {
-            font-size: 2rem;
-        }
+        span { font-size: 2rem; }
 
-        figure {
-            display: none;
-        }
+        figure { display: none; }
     }
 }
 
@@ -50,7 +42,5 @@
     width: 21.9%;
     border-right: 1px solid #009988;
 
-    &:last-of-type {
-        border-right: none;
-    }
+    &:last-of-type { border-right: none; }
 }

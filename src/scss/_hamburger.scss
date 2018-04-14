@@ -7,7 +7,7 @@
     top: 0;
     right: 10px;
     display: none;
-    @media screen and (min-width: 320px) and (max-width: 1347px) {
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
         display: block;
     }
 
@@ -29,9 +29,7 @@
                 z-index: 1;
             }
     
-            ~ .hamburger__icon {
-                z-index: 2;
-            }
+            ~ .hamburger__icon { z-index: 2; }
         }
     }
 

@@ -19,7 +19,7 @@ h1 {
   font-family: "reenie";
   color: #009688;
 
-  @media screen and (min-width: 320px) and (max-width: 1347px) {
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
     font-size: 1.5rem;
     margin-left: 20px;
   }
@@ -30,9 +30,7 @@ h2 {
   color: #009688;
 }
 
-h1, h2 {
-  text-transform: uppercase;
-}
+h1, h2 { text-transform: uppercase; }
 
 p {
   font-family: "josefin-light";
